@@ -670,7 +670,8 @@
         min-width: max-content;
         min-height: max-content;
       }
-      .footer__provider img {
+      .footer__provider img,
+      .footer__provider svg {
         margin: 6px;
       }
       .footer__text {
@@ -698,7 +699,6 @@
           position: absolute;
           top: 0px;
           left: -32px;
-          max-width: 260px;
           width: 100%;
           background: linear-gradient(135deg, #b2c3ff 0%, #6385ff 28.38%, #1044ff 100%);
           border-radius: 0 1rem 0 0;
@@ -779,6 +779,10 @@
         }
       }
       @media (max-width: 530px) {
+        .header__inner {
+          justify-content: center;
+          padding-left: 0;
+        }
         .fixed__menu {
           display: block;
           position: fixed;
@@ -878,6 +882,7 @@
           max-width: 400px;
           min-width: 360px;
           min-height: 395px;
+          padding: 7px;
         }
         .tournament__title {
           font-size: 16px;
@@ -923,8 +928,6 @@
         .footer__copyright {
           margin-bottom: 60px;
         }
-      }
-      @media (max-width: 476px) {
       }
     </style>
     <div class="fixed__menu">
@@ -991,66 +994,6 @@
           <div class="games">
             <div class="games__wrapp">
               <div class="games__item">
-                <a class="game__img games__item--top" href="go">
-                  <img src="images/miss-cheri.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Miss Cherry Fruits</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/lucky-dama.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Lucky Dama Muerta</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img">
-                  <img src="images/bonanza.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Sweet Bonanza</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/mega-up.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Merge Up</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/trouble-jet.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Trouble Jet</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/digger.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Dig Dig Digger</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
                 <a href="go" class="game__img games__item--top">
                   <img src="images/bonanza-billion.webp" width="260" height="174" alt="game image" loading="lazy" />
                 </a>
@@ -1092,29 +1035,9 @@
               </div>
               <div class="games__item">
                 <a href="go" class="game__img games__item--top">
-                  <img src="images/elvis.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Elvis Frog TRUEWAYS</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
                   <img src="images/coin-volcano.webp" width="260" height="174" alt="game image" loading="lazy" />
                 </a>
                 <p class="game__title">Coin Volcano</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/extra-win.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Extra Win X Pots</p>
                 <div class="game__overlay">
                   <a class="game__overlay-link" href="go">Graj</a>
                   <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
@@ -1131,159 +1054,10 @@
                 </div>
               </div>
               <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/5-fortunator.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">5 Fortunator</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/shark-srin.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Shark Spin</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
                 <a href="go" class="game__img games__item--reealoffortune">
                   <img src="images/power-crown.webp" width="260" height="174" alt="game image" loading="lazy" />
                 </a>
                 <p class="game__title">Power Crown: Hold and Win</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/wings-victory.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Wings of Victory</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img">
-                  <img src="images/olympgate.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Gates of Olympus</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/32-cards.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">32 Cards</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/hot-burning.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Hot Burning Wins</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/wild-wings.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">The Wild Wings of Phoenix</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/candy-monsta.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Candy Monsta</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/monster-hunt.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Monster Hunt</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/book-of-kemet.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Book of Kemet</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/coins-hold.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">777 Coins</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/candy-mix.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Candy Mix</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/bac-bo.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Bac Bo</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/luck-magic.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Luck & Magic</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/sunny-fruit.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Sunny Fruits 2: Hold and Win</p>
                 <div class="game__overlay">
                   <a class="game__overlay-link" href="go">Graj</a>
                   <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
@@ -1310,15 +1084,6 @@
                 </div>
               </div>
               <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/Sun-Crown.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Sun Crown</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                </div>
-              </div>
-              <div class="games__item">
                 <a href="go" class="game__img">
                   <img src="images/WILD-MIRAGE.webp" width="260" height="174" alt="game image" loading="lazy" />
                 </a>
@@ -1329,99 +1094,9 @@
               </div>
               <div class="games__item">
                 <a href="go" class="game__img games__item--top">
-                  <img src="images/Labour-Day.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Labour Day</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/Cash-The-Gold.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Cash The Gold Hold And Win</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/Slottica - Fruits.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Slottica - Fruits Craze</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
                   <img src="images/Great-Buffalo-Megaways.webp" width="260" height="174" alt="game image" loading="lazy" />
                 </a>
                 <p class="game__title">Great Buffalo Megaways</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/Aztec-Powernudge.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Aztec Powernudge</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img">
-                  <img src="images/book-of-kemet.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Book of Runes</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/Jackbox-Multi.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Jackbox Multi</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/RED-MOON-PIRATES.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">RED MOON PIRATES</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/Fat-Frogs.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">333 Fat Frogs POWER COMBO</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/Book-Of-Savannahs.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Book Of Savannahs Queen</p>
                 <div class="game__overlay">
                   <a class="game__overlay-link" href="go">Graj</a>
                   <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
@@ -1449,66 +1124,6 @@
               </div>
               <div class="games__item">
                 <a href="go" class="game__img games__item--top">
-                  <img src="images/Mega-Rich-Fruits.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Mega Rich Fruits</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img">
-                  <img src="images/8-Pool-Stars.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">8 Pool Stars</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/Midas-Golden-Touch.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Midas Golden Touch 2</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img">
-                  <img src="images/Cash-Crew.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Cash Crew</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/Cash-50-Royal-Crown.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Cash 50 Royal Crown</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/Jaguar-Quest.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Jaguar Quest</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
                   <img src="images/Pinata-Wins.webp" width="260" height="174" alt="game image" loading="lazy" />
                 </a>
                 <p class="game__title">Pinata Wins</p>
@@ -1518,79 +1133,9 @@
               </div>
               <div class="games__item">
                 <a href="go" class="game__img games__item--top">
-                  <img src="images/Fruit-Blender-Mania.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Fruit Blender Mania</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/Lucky-Toad.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Lucky Toad</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/Jolly-Queen.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Jolly Queen</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/Orb-of-Destiny.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Orb of Destiny</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
                   <img src="images/Orient-Story-Deluxe.webp" width="260" height="174" alt="game image" loading="lazy" />
                 </a>
                 <p class="game__title">Orient Story Deluxe</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/Gorilla-Rapid-Link.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Gorilla Rapid Link</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/Revenge-of-the-Daimyo.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Revenge of the Daimyo</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/Ice-Lobster.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Ice Lobster</p>
                 <div class="game__overlay">
                   <a class="game__overlay-link" href="go">Graj</a>
                   <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
@@ -1685,60 +1230,10 @@
                 </div>
               </div>
               <div class="games__item">
-                <a href="go" class="game__img">
-                  <img src="images/olympgate.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Gates of Olympus</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/candy-monsta.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Candy Monsta</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
                 <a href="go" class="game__img games__item--top">
                   <img src="images/wild-cash.webp" width="260" height="174" alt="game image" loading="lazy" />
                 </a>
                 <p class="game__title">Wild Cash x9990</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/shark-srin.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Shark Spin</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/wild-wings.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">The Wild Wings of Phoenix</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/book-of-kemet.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Book of Kemet</p>
                 <div class="game__overlay">
                   <a class="game__overlay-link" href="go">Graj</a>
                   <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
@@ -1756,58 +1251,9 @@
               </div>
               <div class="games__item">
                 <a href="go" class="game__img games__item--top">
-                  <img src="images/hot-burning.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Hot Burning Wins</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/wings-victory.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Wings of Victory</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img">
-                  <img src="images/bonanza.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Sweet Bonanza</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/32-cards.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">32 Cards</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
                   <img src="images/Wolf-Gold.webp" width="260" height="174" alt="game image" loading="lazy" />
                 </a>
                 <p class="game__title">Wolf Gold</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/Lion-Coins.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Lion Coins</p>
                 <div class="game__overlay">
                   <a class="game__overlay-link" href="go">Graj</a>
                   <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
@@ -1840,60 +1286,10 @@
                 </div>
               </div>
               <div class="games__item">
-                <a class="game__img games__item--top" href="go">
-                  <img src="images/miss-cheri.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Miss Cherry Fruits</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/coins-hold.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">777 Coins</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/Prosperity-Pearls.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Prosperity Pearls</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
                 <a href="go" class="game__img games__item--top">
                   <img src="images/Sun-of-Egypt-3.webp" width="260" height="174" alt="game image" loading="lazy" />
                 </a>
                 <p class="game__title">Sun of Egypt 3</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/lucky-dama.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Lucky Dama Muerta</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/extra-win.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Extra Win X Pots</p>
                 <div class="game__overlay">
                   <a class="game__overlay-link" href="go">Graj</a>
                   <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
@@ -1914,56 +1310,6 @@
                   <img src="images/Mor-Magic-Apple.webp" width="260" height="174" alt="game image" loading="lazy" />
                 </a>
                 <p class="game__title">More Magic Apple</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/elvis.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Elvis Frog TRUEWAYS</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/luck-magic.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Luck & Magic</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/sunny-fruit.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Sunny Fruits 2: Hold and Win</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/Sky-Pearls.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Sky Pearls</p>
-                <div class="game__overlay">
-                  <a class="game__overlay-link" href="go">Graj</a>
-                  <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
-                </div>
-              </div>
-              <div class="games__item">
-                <a href="go" class="game__img games__item--top">
-                  <img src="images/mega-up.webp" width="260" height="174" alt="game image" loading="lazy" />
-                </a>
-                <p class="game__title">Merge Up</p>
                 <div class="game__overlay">
                   <a class="game__overlay-link" href="go">Graj</a>
                   <a class="game__overlay-link game__overlay-demo" href="go">Demo</a>
@@ -2611,28 +1957,42 @@
           <div class="footer--scroll">
             <div class="footer__wrapp">
               <a class="footer__provider" href="go">
-                <img src="images/playgo.svg" loading="lazy" width="120" height="60" alt="provider image" />
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-playgo"></use>
+                </svg>
               </a>
               <a class="footer__provider" href="go">
-                <img src="images/netent.svg" loading="lazy" width="120" height="60" alt="provider image" />
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-netent"></use>
+                </svg>
               </a>
               <a class="footer__provider" href="go">
                 <img src="images/booongo.svg" loading="lazy" width="120" height="60" alt="provider image" />
               </a>
               <a class="footer__provider" href="go">
-                <img src="images/novomatik.svg" loading="lazy" width="120" height="60" alt="provider image" />
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-novomatik"></use>
+                </svg>
               </a>
               <a class="footer__provider" href="go">
-                <img src="images/betsoft.svg" loading="lazy" width="120" height="60" alt="provider image" />
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-betsoft"></use>
+                </svg>
               </a>
               <a class="footer__provider" href="go">
-                <img src="images/playtech.svg" loading="lazy" width="120" height="60" alt="provider image" />
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-playtech"></use>
+                </svg>
               </a>
               <a class="footer__provider" href="go">
-                <img src="images/quick.svg" loading="lazy" width="120" height="60" alt="provider image" />
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-quick"></use>
+                </svg>
               </a>
               <a class="footer__provider" href="go">
-                <img src="images/megajeck.svg" loading="lazy" width="120" height="60" alt="provider image" />
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-megajeck"></use>
+                </svg>
               </a>
               <a class="footer__provider" href="go">
                 <img src="images/gamzix.svg" loading="lazy" width="120" height="60" alt="provider image" />
@@ -2641,31 +2001,47 @@
                 <img src="images/endorphina.svg" loading="lazy" width="120" height="60" alt="provider image" />
               </a>
               <a class="footer__provider" href="go">
-                <img src="images/bet2tech.svg" loading="lazy" width="120" height="60" alt="provider image" />
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-bet2tech"></use>
+                </svg>
               </a>
               <a class="footer__provider" href="go">
-                <img src="images/betsolution.svg" loading="lazy" width="120" height="60" alt="provider image" />
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-betsolution"></use>
+                </svg>
               </a>
               <a class="footer__provider" href="go">
-                <img src="images/weare.svg" loading="lazy" width="120" height="60" alt="provider image" />
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-weare"></use>
+                </svg>
               </a>
               <a class="footer__provider" href="go">
-                <img src="images/noclues.svg" loading="lazy" width="120" height="60" alt="provider image" />
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-noclues"></use>
+                </svg>
               </a>
               <a class="footer__provider" href="go">
-                <img src="images/virtual.svg" loading="lazy" width="120" height="60" alt="provider image" />
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-virtual"></use>
+                </svg>
               </a>
               <a class="footer__provider" href="go">
-                <img src="images/mrslotty.svg" loading="lazy" width="120" height="60" alt="provider image" />
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-mrslotty"></use>
+                </svg>
               </a>
               <a class="footer__provider" href="go">
                 <img src="images/mancala.svg" loading="lazy" width="120" height="60" alt="provider image" />
               </a>
               <a class="footer__provider" href="go">
-                <img src="images/zillion.svg" loading="lazy" width="120" height="60" alt="provider image" />
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-zillion"></use>
+                </svg>
               </a>
               <a class="footer__provider" href="go">
-                <img src="images/platinus.svg" loading="lazy" width="120" height="60" alt="provider image" />
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-platinus"></use>
+                </svg>
               </a>
               <a class="footer__provider" href="go">
                 <img src="images/gamebet.svg" loading="lazy" width="120" height="60" alt="provider image" />
@@ -2674,31 +2050,43 @@
                 <img src="images/mojos.svg" loading="lazy" width="120" height="60" alt="provider image" />
               </a>
               <a class="footer__provider" href="go">
-                <img src="images/interactive.svg" loading="lazy" width="120" height="60" alt="provider image" />
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-interactive"></use>
+                </svg>
               </a>
               <a class="footer__provider" href="go">
-                <img src="images/spribe.svg" loading="lazy" width="120" height="60" alt="provider image" />
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-spribe"></use>
+                </svg>
               </a>
               <a class="footer__provider" href="go">
                 <img src="images/atronic.svg" loading="lazy" width="120" height="60" alt="provider image" />
               </a>
               <a class="footer__provider" href="go">
-                <img src="images/cyber-slot.svg" loading="lazy" width="120" height="60" alt="provider image" />
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-cyber-slot"></use>
+                </svg>
               </a>
               <a class="footer__provider" href="go">
                 <img src="images/playbro.svg" loading="lazy" width="120" height="60" alt="provider image" />
               </a>
               <a class="footer__provider" href="go">
-                <img src="images/champion.svg" loading="lazy" width="120" height="60" alt="provider image" />
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-champion"></use>
+                </svg>
               </a>
               <a class="footer__provider" href="go">
                 <img src="images/vtv.svg" loading="lazy" width="120" height="60" alt="provider image" />
               </a>
               <a class="footer__provider" href="go">
-                <img src="images/yggdrasil.svg" loading="lazy" width="120" height="60" alt="provider image" />
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-yggdrasil"></use>
+                </svg>
               </a>
               <a class="footer__provider" href="go">
-                <img src="images/tpg.svg" loading="lazy" width="120" height="60" alt="provider image" />
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-tpg"></use>
+                </svg>
               </a>
               <a class="footer__provider" href="go">
                 <img src="images/fazi.svg" loading="lazy" width="120" height="60" alt="provider image" />
@@ -2707,7 +2095,9 @@
                 <img src="images/vibra.svg" loading="lazy" width="120" height="60" alt="provider image" />
               </a>
               <a class="footer__provider" href="go">
-                <img src="images/triple.svg" loading="lazy" width="120" height="60" alt="provider image" />
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-triple"></use>
+                </svg>
               </a>
               <a class="footer__provider" href="go">
                 <img src="images/abc495005610.svg" loading="lazy" width="120" height="60" alt="provider image" />
@@ -2716,34 +2106,52 @@
                 <img src="images/men-gaming.svg" loading="lazy" width="120" height="60" alt="provider image" />
               </a>
               <a class="footer__provider" href="go">
-                <img src="images/leader.svg" loading="lazy" width="120" height="60" alt="provider image" />
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-leader"></use>
+                </svg>
               </a>
               <a class="footer__provider" href="go">
-                <img src="images/ruby-play.svg" loading="lazy" width="120" height="60" alt="provider image" />
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-ruby-play"></use>
+                </svg>
               </a>
               <a class="footer__provider" href="go">
-                <img src="images/hollywood.svg" loading="lazy" width="120" height="60" alt="provider image" />
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-hollywood"></use>
+                </svg>
               </a>
               <a class="footer__provider" href="go">
-                <img src="images/original.svg" loading="lazy" width="120" height="60" alt="provider image" />
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-original"></use>
+                </svg>
               </a>
               <a class="footer__provider" href="go">
-                <img src="images/matrix.svg" loading="lazy" width="120" height="60" alt="provider image" />
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-matrix"></use>
+                </svg>
               </a>
               <a class="footer__provider" href="go">
-                <img src="images/simpleplay.svg" loading="lazy" width="120" height="60" alt="provider image" />
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-simpleplay"></use>
+                </svg>
               </a>
               <a class="footer__provider" href="go">
-                <img src="images/kagaming.svg" loading="lazy" width="120" height="60" alt="provider image" />
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-kagaming"></use>
+                </svg>
               </a>
               <a class="footer__provider" href="go">
                 <img src="images/pg-pocet.webp" loading="lazy" width="120" height="60" alt="provider image" />
               </a>
               <a class="footer__provider" href="go">
-                <img src="images/swint.svg" loading="lazy" width="120" height="60" alt="provider image" />
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-swint"></use>
+                </svg>
               </a>
               <a class="footer__provider" href="go">
-                <img src="images/macaw.svg" loading="lazy" width="120" height="60" alt="provider image" />
+                <svg loading="lazy" width="120" height="60" alt="provider image">
+                  <use xlink:href="images/developers.svg#icon-macaw"></use>
+                </svg>
               </a>
               <a class="footer__provider" href="go">
                 <img src="images/onlyplay.svg" loading="lazy" width="120" height="60" alt="provider image" />
